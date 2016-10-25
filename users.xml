@@ -17,6 +17,32 @@
 				<name>Name 2</name>
 		</user>
 		</users>
+		<tasks>
+			<task id="1">
+				<title>Do Things</title>
+				<leader>Name 1</leader>
+				<participants>
+					<participant>Name 1</participant>
+					<participant>Name 2</participant>
+				</participants>
+				<targetDate>13/10/2016</targetDate>
+				<summary>Blah Blah Blah</summary>
+				<status>New</status>
+				<URL>www.google.com</URL>
+			</task>
+			<task id="2">
+				<title>Do Things</title>
+				<leader>Name 1</leader>
+				<participants>
+					<participant>Name 1</participant>
+					<participant>Name 2</participant>
+				</participants>
+				<targetDate>13/10/2016</targetDate>
+				<summary>Blah Blah Blah</summary>
+				<status>Complete</status>
+				<URL>www.google.com</URL>
+			</task>
+		</tasks>
 	</company>
 
 	<company id='2'>
@@ -35,6 +61,32 @@
 				<name>Name 4</name>
 			</user>
 		</users>
+		<tasks>
+			<task id="3">
+				<title>Do Things</title>
+				<leader>Name 3</leader>
+				<participants>
+					<participant>Name 3</participant>
+					<participant>Name 4</participant>
+				</participants>
+				<targetDate>13/10/2016</targetDate>
+				<summary>Blah Blah Blah</summary>
+				<status>New</status>
+				<URL>www.google.com</URL>
+			</task>
+			<task id="4">
+				<title>Do Things</title>
+				<leader>Name 1</leader>
+				<participants>
+					<participant>Name 1</participant>
+					<participant>Name 2</participant>
+				</participants>
+				<targetDate>13/10/2016</targetDate>
+				<summary>Blah Blah Blah</summary>
+				<status>Complete</status>
+				<URL>www.google.com</URL>
+			</task>
+		</tasks>
 	</company>
 
 	<company id='3'>
@@ -53,5 +105,31 @@
 				<name>Name 6</name>
 			</user>
 		</users>
+		<tasks>
+			<task id="5">
+				<title>Do Things</title>
+				<leader>Name 5</leader>
+				<participants>
+					<participant>Name 5</participant>
+					<participant>Name 6</participant>
+				</participants>
+				<targetDate>13/10/2016</targetDate>
+				<summary>Blah Blah Blah</summary>
+				<status>New</status>
+				<URL>www.google.com</URL>
+			</task>
+			<task id="6">
+				<title>Do Things</title>
+				<leader>Name 6</leader>
+				<participants>
+					<participant>Name 5</participant>
+					<participant>Name 6</participant>
+				</participants>
+				<targetDate>13/10/2016</targetDate>
+				<summary>Blah Blah Blah</summary>
+				<status>Complete</status>
+				<URL>www.google.com</URL>
+			</task>
+		</tasks>
 	</company>
 </companies>

@@ -1,16 +1,29 @@
 //login-ajax.js
-$(document).ready(function () {
-
-		$.ajax({
+function init()
+{
+			$.ajax({
 			url		: 'home.php',
 			dataType: 'json',
 			encode	: true
 		})
 
 			.done(function(data){
-				console.log(data);
+				if(!data.session.username)
+				{
+					$(".navbar").hide();
+				}
+				else
+				{
+					$(".form-signin").hide();
+					$(".navbar").show();
+				}
 			});
 
-		event.preventDefault();
+		event.preventDefault();	
+}
+
+$(document).ready(function() {
+
+	init();
 
 });
