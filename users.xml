@@ -8,11 +8,13 @@
 				<username>user1</username>
 				<password>password1</password>
 				<access>Admin</access>
+				<name>Name 1</name>
 			</user>
 			<user>
 				<username>user2</username>
 				<password>password2</password>
 				<access>Contributor</access>
+				<name>Name 2</name>
 		</user>
 		</users>
 	</company>
@@ -24,11 +26,13 @@
 				<username>user3</username>
 				<password>password3</password>
 				<access>Admin</access>
+				<name>Name 3</name>
 			</user>
 			<user>
 				<username>user4</username>
 				<password>password4</password>
 				<access>Contributor</access>
+				<name>Name 4</name>
 			</user>
 		</users>
 	</company>
@@ -40,11 +44,13 @@
 				<username>user5</username>
 				<password>password5</password>
 				<access>Admin</access>
+				<name>Name 5</name>
 			</user>
 			<user>
 				<username>user6</username>
 				<password>password6</password>
 				<access>Contributor</access>
+				<name>Name 6</name>
 			</user>
 		</users>
 	</company>
