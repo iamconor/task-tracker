@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<companies>
+	<company id='1'>
+		<companyName>Company1</companyName>
+		<users>
+			<user>
+				<username>user1</username>
+				<password>password1</password>
+				<access>Admin</access>
+			</user>
+			<user>
+				<username>user2</username>
+				<password>password2</password>
+				<access>Contributor</access>
+		</user>
+		</users>
+	</company>
+
+	<company id='2'>
+		<companyName>Company2</companyName>
+		<users>
+			<user>
+				<username>user3</username>
+				<password>password3</password>
+				<access>Admin</access>
+			</user>
+			<user>
+				<username>user4</username>
+				<password>password4</password>
+				<access>Contributor</access>
+			</user>
+		</users>
+	</company>
+
+	<company id='3'>
+		<companyName>House</companyName>
+		<users>
+			<user>
+				<username>user5</username>
+				<password>password5</password>
+				<access>Admin</access>
+			</user>
+			<user>
+				<username>user6</username>
+				<password>password6</password>
+				<access>Contributor</access>
+			</user>
+		</users>
+	</company>
+</companies>
