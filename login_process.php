@@ -27,7 +27,7 @@ if(!empty($errors))
 }
 else
 {
-	$file = "users.xml";
+	$file = "tasks.xml";
 	$fp = fopen($file, "rb") or die("Err - can't open file");
 	$str = fread($fp, filesize($file));
 

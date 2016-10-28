@@ -1,135 +1,385 @@
 <?xml version="1.0"?>
-
 <companies>
-	<company id='1'>
-		<companyName>Company1</companyName>
-		<users>
-			<user>
-				<username>user1</username>
-				<password>password1</password>
-				<access>Admin</access>
-				<name>Name 1</name>
-			</user>
-			<user>
-				<username>user2</username>
-				<password>password2</password>
-				<access>Contributor</access>
-				<name>Name 2</name>
-		</user>
-		</users>
-		<tasks>
-			<task id="1">
-				<title>Do Things</title>
-				<leader>Name 1</leader>
-				<participants>
-					<participant>Name 1</participant>
-					<participant>Name 2</participant>
-				</participants>
-				<targetDate>13/10/2016</targetDate>
-				<summary>Blah Blah Blah</summary>
-				<status>New</status>
-				<URL>www.google.com</URL>
-			</task>
-			<task id="2">
-				<title>Do Things</title>
-				<leader>Name 1</leader>
-				<participants>
-					<participant>Name 1</participant>
-					<participant>Name 2</participant>
-				</participants>
-				<targetDate>13/10/2016</targetDate>
-				<summary>Blah Blah Blah</summary>
-				<status>Complete</status>
-				<URL>www.google.com</URL>
-			</task>
-		</tasks>
-	</company>
-
-	<company id='2'>
-		<companyName>Company2</companyName>
-		<users>
-			<user>
-				<username>user3</username>
-				<password>password3</password>
-				<access>Admin</access>
-				<name>Name 3</name>
-			</user>
-			<user>
-				<username>user4</username>
-				<password>password4</password>
-				<access>Contributor</access>
-				<name>Name 4</name>
-			</user>
-		</users>
-		<tasks>
-			<task id="3">
-				<title>Do Things</title>
-				<leader>Name 3</leader>
-				<participants>
-					<participant>Name 3</participant>
-					<participant>Name 4</participant>
-				</participants>
-				<targetDate>13/10/2016</targetDate>
-				<summary>Blah Blah Blah</summary>
-				<status>New</status>
-				<URL>www.google.com</URL>
-			</task>
-			<task id="4">
-				<title>Do Things</title>
-				<leader>Name 1</leader>
-				<participants>
-					<participant>Name 1</participant>
-					<participant>Name 2</participant>
-				</participants>
-				<targetDate>13/10/2016</targetDate>
-				<summary>Blah Blah Blah</summary>
-				<status>Complete</status>
-				<URL>www.google.com</URL>
-			</task>
-		</tasks>
-	</company>
-
-	<company id='3'>
-		<companyName>House</companyName>
-		<users>
-			<user>
-				<username>user5</username>
-				<password>password5</password>
-				<access>Admin</access>
-				<name>Name 5</name>
-			</user>
-			<user>
-				<username>user6</username>
-				<password>password6</password>
-				<access>Contributor</access>
-				<name>Name 6</name>
-			</user>
-		</users>
-		<tasks>
-			<task id="5">
-				<title>Do Things</title>
-				<leader>Name 5</leader>
-				<participants>
-					<participant>Name 5</participant>
-					<participant>Name 6</participant>
-				</participants>
-				<targetDate>13/10/2016</targetDate>
-				<summary>Blah Blah Blah</summary>
-				<status>New</status>
-				<URL>www.google.com</URL>
-			</task>
-			<task id="6">
-				<title>Do Things</title>
-				<leader>Name 6</leader>
-				<participants>
-					<participant>Name 5</participant>
-					<participant>Name 6</participant>
-				</participants>
-				<targetDate>13/10/2016</targetDate>
-				<summary>Blah Blah Blah</summary>
-				<status>Complete</status>
-				<URL>www.google.com</URL>
-			</task>
-		</tasks>
-	</company>
+  <company id="1">
+    <companyName>Company1</companyName>
+    <users>
+      <user>
+        <username>user1</username>
+        <password>password1</password>
+        <access>Admin</access>
+        <name>Name 1</name>
+      </user>
+      <user>
+        <username>user2</username>
+        <password>password2</password>
+        <access>Contributor</access>
+        <name>Name 2</name>
+      </user>
+    </users>
+    <tasks>
+      <task id="29">
+        <title>drink coffee</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-29</date>
+        <summary>brazilian only</summary>
+        <status>In Progress</status>
+        <url>www.starbucks.co.uk</url>
+      </task>
+      <task id="28">
+        <title>Print report</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-29</date>
+        <summary>A4</summary>
+        <status>Complete</status>
+        <url>www.epson.com</url>
+      </task>
+      <task id="27">
+        <title>fix bugs</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-30</date>
+        <summary>that one</summary>
+        <status>In Progress</status>
+        <url>www.youtube.com</url>
+      </task>
+      <task id="26">
+        <title>fix bugs</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-30</date>
+        <summary>that one</summary>
+        <status>In Progress</status>
+        <url>www.youtube.com</url>
+      </task>
+      <task id="25">
+        <title>Mark coursework</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-29</date>
+        <summary>websites</summary>
+        <status>Complete</status>
+        <url>portal.ulster.ac.uk</url>
+      </task>
+      <task id="24">
+        <title>buy friday beers</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-10-27</date>
+        <summary>heineken please</summary>
+        <status>New</status>
+        <url>www.heineken.com</url>
+      </task>
+      <task id="23">
+        <title>fix bugs</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-21</date>
+        <summary>they're broken</summary>
+        <status>New</status>
+        <url>www.stackoverflow.com</url>
+      </task>
+      <task id="22">
+        <title>program new website</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-12-04</date>
+        <summary>get coding</summary>
+        <status>New</status>
+        <url>www.stackoverflow.com</url>
+      </task>
+      <task id="21">
+        <title>program new website</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-12-04</date>
+        <summary>get coding</summary>
+        <status>New</status>
+        <url>www.stackoverflow.com</url>
+      </task>
+      <task id="20">
+        <title>play video games</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-10-22</date>
+        <summary>mario</summary>
+        <status>New</status>
+        <url>www.nintendo.com</url>
+      </task>
+      <task id="19">
+        <title>get some sleep</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-10-29</date>
+        <summary>get some rest</summary>
+        <status>New</status>
+        <url>en.wikipedia.org/wiki/Sleep</url>
+      </task>
+      <task id="18">
+        <title>Order books</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-10-30</date>
+        <summary>New python books</summary>
+        <status>New</status>
+        <url>en.wikipedia.org/wiki/Sleep</url>
+      </task>
+      <task id="17">
+        <title>Study</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-11-12</date>
+        <summary>do some studying</summary>
+        <status>New</status>
+        <url>www.udacity.com</url>
+      </task>
+      <task id="16">
+        <title>Study</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-11-12</date>
+        <summary>do some studying</summary>
+        <status>New</status>
+        <url>www.udacity.com</url>
+      </task>
+      <task id="15">
+        <title>Chill out</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-30</date>
+        <summary>treat yourself</summary>
+        <status>New</status>
+        <url>www.netflix.com</url>
+      </task>
+      <task id="14">
+        <title>Order books</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-10-30</date>
+        <summary>New python books</summary>
+        <status>New</status>
+        <url>www.amazon.co.uk</url>
+      </task>
+      <task id="13">
+        <title>Book christmas party</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-11-11</date>
+        <summary>Ramore?</summary>
+        <status>New</status>
+        <url>www.ramorerestaurant.com</url>
+      </task>
+      <task id="12">
+        <title>Make Tea</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-11-03</date>
+        <summary>Green tea only, my body's a temple</summary>
+        <status>New</status>
+        <url>www.authoritynutrition.com/top-10-evidence-based-health-benefits-of-green-tea/</url>
+      </task>
+      <task id="11">
+        <title>Make Tea</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-11-03</date>
+        <summary>Green tea only, my body's a temple</summary>
+        <status>New</status>
+        <url>www.authoritynutrition.com/top-10-evidence-based-health-benefits-of-green-tea/</url>
+      </task>
+      <task id="10">
+        <title>Make Coffee</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-29</date>
+        <summary>Americanos all round</summary>
+        <status>New</status>
+        <url>www.nespresso.com</url>
+      </task>
+      <task id="9">
+        <title>order new macbook</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-30</date>
+        <summary>i7 16gb</summary>
+        <status>New</status>
+        <url>www.amazon.co.uk</url>
+      </task>
+      <task id="8">
+        <title>Order Pizza</title>
+        <leader>Name 2</leader>
+        <participants>
+          <participant>Name 2</participant>
+        </participants>
+        <date>2016-10-29</date>
+        <summary>Sicilian</summary>
+        <status>New</status>
+        <url>www.dominoes.co.uk</url>
+      </task>
+      <task id="7">
+        <title>new task</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+        </participants>
+        <date>2016-10-22</date>
+        <summary>hello</summary>
+        <status>New</status>
+        <url>www.youtube.com</url>
+      </task>
+      <task id="1">
+        <title>Do Things</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+          <participant>Name 2</participant>
+        </participants>
+        <targetDate>13/10/2016</targetDate>
+        <summary>Blah Blah Blah</summary>
+        <status>New</status>
+        <URL>www.google.com</URL>
+      </task>
+      <task id="2">
+        <title>Do Things</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+          <participant>Name 2</participant>
+        </participants>
+        <targetDate>13/10/2016</targetDate>
+        <summary>Blah Blah Blah</summary>
+        <status>Complete</status>
+        <URL>www.google.com</URL>
+      </task>
+    </tasks>
+  </company>
+  <company id="2">
+    <companyName>Company2</companyName>
+    <users>
+      <user>
+        <username>user3</username>
+        <password>password3</password>
+        <access>Admin</access>
+        <name>Name 3</name>
+      </user>
+      <user>
+        <username>user4</username>
+        <password>password4</password>
+        <access>Contributor</access>
+        <name>Name 4</name>
+      </user>
+    </users>
+    <tasks>
+      <task id="3">
+        <title>Do Things</title>
+        <leader>Name 3</leader>
+        <participants>
+          <participant>Name 3</participant>
+          <participant>Name 4</participant>
+        </participants>
+        <targetDate>13/10/2016</targetDate>
+        <summary>Blah Blah Blah</summary>
+        <status>New</status>
+        <URL>www.google.com</URL>
+      </task>
+      <task id="4">
+        <title>Do Things</title>
+        <leader>Name 1</leader>
+        <participants>
+          <participant>Name 1</participant>
+          <participant>Name 2</participant>
+        </participants>
+        <targetDate>13/10/2016</targetDate>
+        <summary>Blah Blah Blah</summary>
+        <status>Complete</status>
+        <URL>www.google.com</URL>
+      </task>
+    </tasks>
+  </company>
+  <company id="3">
+    <companyName>House</companyName>
+    <users>
+      <user>
+        <username>user5</username>
+        <password>password5</password>
+        <access>Admin</access>
+        <name>Name 5</name>
+      </user>
+      <user>
+        <username>user6</username>
+        <password>password6</password>
+        <access>Contributor</access>
+        <name>Name 6</name>
+      </user>
+    </users>
+    <tasks>
+      <task id="5">
+        <title>Do Things</title>
+        <leader>Name 5</leader>
+        <participants>
+          <participant>Name 5</participant>
+          <participant>Name 6</participant>
+        </participants>
+        <targetDate>13/10/2016</targetDate>
+        <summary>Blah Blah Blah</summary>
+        <status>New</status>
+        <URL>www.google.com</URL>
+      </task>
+      <task id="6">
+        <title>Do Things</title>
+        <leader>Name 6</leader>
+        <participants>
+          <participant>Name 5</participant>
+          <participant>Name 6</participant>
+        </participants>
+        <targetDate>13/10/2016</targetDate>
+        <summary>Blah Blah Blah</summary>
+        <status>Complete</status>
+        <URL>www.google.com</URL>
+      </task>
+    </tasks>
+  </company>
 </companies>
