@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$('.form-signin').submit(function(event) {
 		var inputData = {
 			'username'	: $('#username').val(),
-			'password'		: $('#password').val()
+			'password'	: $('#password').val()
 		};
 		console.log(inputData);
 		$.ajax({

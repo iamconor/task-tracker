@@ -37,6 +37,11 @@
           .form-signin input[type="password"] {
             margin-bottom: 15px;
           }
+          .jumbotron {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+          }
     </style>
   </head>
   <body>
@@ -80,24 +85,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active navlink"><button class="btn btn-primary navbar-btn" type="button">All <span class="badge">4</span></button></li>
-        <li><button class="btn btn-info navbar-btn navlink" type="button">New <span class="badge">4</span></button></li>
-        <li><button class="btn btn-warning navbar-btn navlink" type="button">In Progress <span class="badge">4</span></button></li>
-        <li><button class="btn btn-success navbar-btn navlink" type="button">Complete <span class="badge">4</span></button></li>
+        <li class="active navlink"><button class="btn btn-primary navbar-btn" type="button">All <span id="allBadge" class="badge"></span></button></li>
+        <li><button class="btn btn-info navbar-btn navlink" type="button">New <span id="newBadge" class="badge"></span></button></li>
+        <li><button class="btn btn-warning navbar-btn navlink" type="button">In Progress <span id="progressBadge" class="badge"></span></button></li>
+        <li><button class="btn btn-success navbar-btn navlink" type="button">Complete <span id="completeBadge" class="badge"></span></button></li>
                 <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leader<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+          <ul id="leader" class="dropdown-menu">
           </ul>
         </li>
           <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Participant<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Participants<span class="caret"></span></a>
+          <ul id="participants" class="dropdown-menu">
           </ul>
         </li>
       </ul>
@@ -107,13 +106,64 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-
+      <button class="btn btn-info navbar-btn navlink" type="button" data-toggle="modal" data-target="#myModal">Add Task</button>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="logout.php">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Task Track</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-task" action="add_task.php" method="POST">
+          <h2 class="form-signin-heading">Create New Task</h2>
+          
+          <label for="title">Task Title</label>
+          <input type="text" id="title" class="form-control" placeholder="Title"  autofocus required>
+
+          <label for="leaderForm">Leader (select one):</label>
+          <select class="form-control" id="leaderForm" required>
+          </select>
+
+          <label for="participantsForm">Participants (hold shift to select more than one):</label>
+          <select multiple class="form-control" id="participantsForm" required>
+          </select>
+          
+          <label for="summary">Summary</label>
+          <textarea id="summary" class="form-control" placeholder="Summary" required></textarea>
+          
+          <label for="date">Date Due</label>
+          <input type="date" id="date" class="form-control" placeholder="Date" required>
+
+          <label for="url">URL</label>
+          <input type="text" id="url" class="form-control" placeholder="URL" required><br>
+
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Add Task</button>
+          <br>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <div id="tasks">
+
+    </tasks>
   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -130,5 +180,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="init_ajax.js"></script>
     <script src="login_ajax.js"></script>
+    <script src="add_ajax.js"></script>
+    <script src="build_tasks.js"></script>
   </body>
 </html>

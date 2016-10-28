@@ -18,14 +18,14 @@ $participantsIndex = '2';
 $targetDateIndex = '3';
 $summaryIndex = '4';
 $statusIndex = '5';
-$URLindex = '6';
+$urlIndex = '6';
 
 function countStatus($companies, $statusIndex)
 {
 	$status = array();
 	$status['All'] = 0;
 	$status['New'] = 0;
-	$status['In Progress'] = 0;
+	$status['InProgress'] = 0;
 	$status['Complete'] = 0;
 
 	foreach ($companies->childNodes as $company) 
@@ -45,7 +45,7 @@ function countStatus($companies, $statusIndex)
 				}
 				if($task->childNodes->item($statusIndex)->nodeValue == 'In Progress')
 				{
-					$status['In Progress']++;
+					$status['InProgress']++;
 				}
 			}
 		}
@@ -71,8 +71,45 @@ function getUsers($companies)
 	return $usersArray;
 }
 
+
+function getAllTasks($companies, $titleIndex, $leaderIndex, $participantsIndex, $targetDateIndex, $summaryIndex, $statusIndex, $urlIndex)
+{
+	$count = 0;
+	$tasksArray = array();
+	foreach ($companies->childNodes as $company) {
+		if($company->getAttribute('id') == $_SESSION["company-id"])
+		{
+			$tasks = $company->childNodes->item(2);
+			foreach ($tasks->childNodes as $task) 
+			{
+				$tasksArray[$count]["id"] = $task->getAttribute('id');
+				$tasksArray[$count]["title"] = $task->childNodes->item($titleIndex)->nodeValue;
+				$tasksArray[$count]["leader"] = $task->childNodes->item($leaderIndex)->nodeValue;
+
+				$participants = $task->childNodes->item($participantsIndex);
+				$participantCount = 0;
+				foreach($participants->childNodes as $participant)
+				{					
+					$tasksArray[$count]["participants"][$participantCount] = $participant->childNodes->item(0)->nodeValue;
+					$participantCount++;
+				}
+
+				$tasksArray[$count]["targetDate"] = $task->childNodes->item($targetDateIndex)->nodeValue;
+				$tasksArray[$count]["summary"] = $task->childNodes->item($summaryIndex)->nodeValue;
+				$tasksArray[$count]["status"] = $task->childNodes->item($statusIndex)->nodeValue;
+				$tasksArray[$count]["status"] = $task->childNodes->item($statusIndex)->nodeValue;
+				$tasksArray[$count]["url"] = $task->childNodes->item($urlIndex)->nodeValue;
+
+				$count++;
+			}
+		}
+	}
+	return $tasksArray;
+}
+
 $return['status'] = countStatus($companies, $statusIndex);
 $return['users'] = getUsers($companies);
+$return['tasks'] = getAllTasks($companies, $titleIndex, $leaderIndex, $participantsIndex, $targetDateIndex, $summaryIndex, $statusIndex, $urlIndex);
 $return['session'] = $_SESSION;
 echo json_encode($return);
 
