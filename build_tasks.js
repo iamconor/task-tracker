@@ -21,6 +21,7 @@ function buildTasks(data)
 		html = html + '<strong>Task ID: </strong>'+data.tasks[i].id+'<br>';
 		html = html + '<strong>Title: </strong>'+data.tasks[i].title+'<br>';
 		html = html + '<strong>Leader: </strong>'+data.tasks[i].leader+'<br>';
+		html = html + '<strong>Participants: </strong>'+data.tasks[i].participants.join()+'<br>';
 		html = html + '<strong>Status: </strong>'+data.tasks[i].status+'<br>';
 		html = html + '<strong>Summary: </strong>'+data.tasks[i].summary+'<br>';
 		html = html + '<strong>Target Date: </strong>'+data.tasks[i].targetDate+'<br>';

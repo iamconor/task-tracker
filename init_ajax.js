@@ -14,6 +14,7 @@ function init()
 				}
 				else
 				{
+					$("#masternav").toggleClass('show');
 					$(".form-signin").hide();
 					$(".navbar").show();
 					$("#allBadge").text(data.status.All);

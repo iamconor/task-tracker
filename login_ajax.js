@@ -31,6 +31,7 @@ $(document).ready(function () {
 				}
 				else
 				{
+					$("#masternav").toggleClass('hidden');
 					$("#alerts").empty();
 					$(".form-signin").hide();
 					$("#alerts").append('<div class="alert alert-success"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Success! </strong>'+data.message+'</div>');
